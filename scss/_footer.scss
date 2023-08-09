@@ -1,0 +1,23 @@
+.site-list{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    ul{
+        display: flex;
+        flex-direction: column;
+        width: 18rem;
+        p{
+            font-family: "Sansation_Bold";
+            margin-top: 40px;}
+        li{
+            list-style: none;
+            margin-top: 15px;
+            a{
+                font-size: 16px;}
+        }
+    }
+}
+
+footer > p{
+    margin-top: 177px;
+    margin-bottom: 21px;}

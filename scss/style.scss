@@ -1,0 +1,49 @@
+        /* --- Обнуление стилей, отступов --- */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E1E;}
+
+
+        /* --- Шрифт --- */
+*{  color: #FFFFFF;}
+@font-face {
+    font-family: "NotoSans-Regular";
+    src: url(/src/fonts/NotoSans/NotoSans-Regular.ttf);}
+@font-face {
+    font-family: "NotoSans-Bold";
+    src: url(/src/fonts/NotoSans/NotoSans-Bold.ttf);}
+@font-face {
+    font-family: "NotoSans-Italic";
+    src: url(/src/fonts/NotoSans/NotoSans-Italic.ttf);}
+@font-face {
+    font-family: "Sansation_Regular";
+    src: url(/src/fonts/Sansation/Sansation_Regular.ttf);}
+@font-face {
+    font-family: "Sansation_Bold";
+    src: url(/src/fonts/Sansation/Sansation_Bold.ttf);}
+@font-face {
+    font-family: "Sansation_Italic";
+    src: url(/src/fonts/Sansation/Sansation_Italic.ttf);}
+
+
+*{  font-family: "Sansation_Regular";
+    font-size: 20px;}
+*::selection{background-color:darkgrey;}
+p{  text-align: center;}
+h2{ font-family: "NotoSans-Bold";}
+
+ 
+        /* --- Подключение --- */
+//Шапка
+@import "_header.scss";
+//Содержимое
+@import "_main.scss";
+//Футер
+@import "_footer.scss";

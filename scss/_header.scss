@@ -1,0 +1,28 @@
+header nav a img{width: 119px;}
+
+/*дети header'a должны стать строчно-блочными*/
+header nav a img,
+header nav ul li,
+header nav ul li a{
+    display: inline-block;}
+/*header должен стать flex-контейнером*/
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;}
+/*Остальная часть стилизации*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+        nav{
+            background: #1B1B1B;
+            height: 115px;
+                ul li a{
+                    line-height: 115px;
+                    text-decoration: none;}
+                ul li:not(:last-child) a{
+                    margin-right: 30px;}
+        }
+}
