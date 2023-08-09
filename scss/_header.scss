@@ -26,3 +26,15 @@ header{
                     margin-right: 30px;}
         }
 }
+
+
+/* --- Адаптивный интерфейс --- */
+@media (max-width:908px) {
+    header{
+        nav{
+            ul{
+                display: none;
+            }
+        }
+    }
+}

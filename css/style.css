@@ -59,7 +59,7 @@ p {
   text-align: center;
 }
 
-h2 {
+h2, h3 {
   font-family: "NotoSans-Bold";
 }
 
@@ -101,6 +101,12 @@ header nav ul li:not(:last-child) a {
   margin-right: 30px;
 }
 
+/* --- Адаптивный интерфейс --- */
+@media (max-width: 908px) {
+  header nav ul {
+    display: none;
+  }
+}
 section {
   text-align: center;
   height: 100%;
@@ -130,6 +136,13 @@ section ul li a {
 }
 .section1 img {
   width: 649px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.section1 p {
+  margin-top: 15px;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-shadow: 0.5px 1.5px 1px rgba(0, 0, 0, 0.8);
 }
 
 .section2 {
@@ -139,6 +152,17 @@ section ul li a {
   padding-top: 237px;
   padding-bottom: 258px;
 }
+.section2 h2 {
+  font-size: 82px;
+}
+.section2 h3 {
+  font-size: 42px;
+}
+.section2 p {
+  margin-left: 28%;
+  margin-right: 28%;
+  margin-top: 35px;
+}
 
 .section3 {
   background: url(/src/img/section3.png);
@@ -146,6 +170,14 @@ section ul li a {
   background-position: bottom 30% center;
   padding-top: 216px;
   padding-bottom: 179px;
+}
+.section3 img {
+  width: 650px;
+}
+.section3 p {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 35px;
 }
 
 .section4 {
@@ -155,7 +187,55 @@ section ul li a {
   padding-top: 151px;
   padding-bottom: 252px;
 }
+.section4 h2 {
+  font-size: 82px;
+}
+.section4 h3 {
+  font-size: 32px;
+}
+.section4 p {
+  margin-left: 16%;
+  margin-right: 17%;
+  margin-top: 70px;
+}
 
+/* --- Адаптивный интерфейс --- */
+@media (max-width: 908px) {
+  main .section1 img {
+    width: 324px;
+  }
+  main .section1 p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  main .section2 h2 {
+    font-size: 41px;
+  }
+  main .section2 h3 {
+    font-size: 21px;
+  }
+  main .section2 p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  main .section3 img {
+    width: 276px;
+  }
+  main .section3 p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  main .section4 h2 {
+    font-size: 41px;
+  }
+  main .section4 h3 {
+    font-size: 16px;
+  }
+  main .section4 p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
 .site-list {
   display: flex;
   text-align: center;
@@ -181,4 +261,22 @@ section ul li a {
 footer > p {
   margin-top: 177px;
   margin-bottom: 21px;
+}
+
+/* --- Адаптивный интерфейс --- */
+@media (max-width: 687px) {
+  footer .site-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .site-list ul {
+    align-items: flex-start;
+  }
+  footer .site-list ul li {
+    padding-left: 20px;
+  }
+  footer > p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }/*# sourceMappingURL=style.css.map */

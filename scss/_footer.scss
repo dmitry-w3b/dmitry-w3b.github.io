@@ -21,3 +21,22 @@
 footer > p{
     margin-top: 177px;
     margin-bottom: 21px;}
+
+
+/* --- Адаптивный интерфейс --- */
+@media (max-width:687px) {
+    footer{
+        .site-list{
+            flex-direction: column;
+            align-items: center;
+            ul{
+                align-items: flex-start;
+                li{padding-left: 20px;}
+            }
+        }
+        > p{
+        margin-left: 10%;
+        margin-right: 10%;
+        }
+    }
+}
