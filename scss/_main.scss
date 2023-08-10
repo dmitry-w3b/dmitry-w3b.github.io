@@ -8,13 +8,19 @@ section{
             display: inline-block;
             background-color: #FFFFFF;
             border-radius: 2px;
-      		a{
-      			font-family: "NotoSans-Regular";
-      			font-size: 32px;
-      			color: #282828;
-      			margin: 10px;
-			}
-		}
+            transition: all 0.25s ease; //длительность анимации
+            a{
+                font-family: "NotoSans-Regular";
+                font-size: 32px;
+                color: #282828;
+                margin: 10px;}
+        }
+
+        //добавление анимаций на кнопки
+        li:hover, a:hover{
+            color: #FFFFFF;
+            background-color: #1B1B1B;
+        }
     }
 }
 
@@ -30,9 +36,7 @@ section{
     p{
         margin-top: 15px;
         margin-left: 30%;
-        // margin-left: 563px;
         margin-right: 30%;
-        // margin-right: 564px;
         text-shadow: 0.5px 1.5px 1px rgba(0, 0, 0, 0.80);}
 }
 .section2{

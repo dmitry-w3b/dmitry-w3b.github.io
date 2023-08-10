@@ -5,7 +5,7 @@ header nav a img,
 header nav ul li,
 header nav ul li a{
     display: inline-block;}
-/*header должен стать flex-контейнером*/
+/*nav должен стать flex-контейнером*/
 header nav{
     display: flex;
     justify-content: space-evenly;
@@ -28,7 +28,7 @@ header{
 }
 
 
-/* --- Адаптивный интерфейс --- */
+        /* --- Адаптивный интерфейс --- */
 @media (max-width:908px) {
     header{
         nav{
