@@ -14,12 +14,12 @@
             margin-top: 15px;
             a{
                 transition: all 0.25s ease; //длительность анимации
-                font-size: 16px;}
+                font-size: 16px;
                 
-            //анимация ссылок в футере
-            a:hover{
-                font-size: 18px;
-                color: #96FFBA;
+                //анимация ссылок в футере
+                &:hover{
+                    font-size: 18px;
+                    color: #96FFBA;}
             }
         }
     }

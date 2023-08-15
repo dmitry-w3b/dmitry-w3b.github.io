@@ -16,15 +16,25 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
-        nav{
-            background: #1B1B1B;
-            height: 115px;
-                ul li a{
+    nav{
+        background: #1B1B1B;
+        height: 115px;
+        ul{
+            display: flex;
+            li{
+                a{
+                    padding-left: 15px;
+                    padding-right: 15px;
                     line-height: 115px;
-                    text-decoration: none;}
-                ul li:not(:last-child) a{
-                    margin-right: 30px;}
-        }
+                    text-decoration: none;
+                    transition: all 0.25s ease;
+                    &:hover{
+                        background: #96ffbb62;
+                    }
+                }
+            }
+        }   
+    }
 }
 
 
@@ -34,6 +44,7 @@ header{
         nav{
             ul{
                 display: none;
+                //  ¯\_( ͡° ͜ʖ ͡°)_/¯
             }
         }
     }

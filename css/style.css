@@ -51,11 +51,11 @@ body {
 }
 
 *::-moz-selection {
-  background-color: darkgrey;
+  background-color: rgba(76, 130, 95, 0.8);
 }
 
 *::selection {
-  background-color: darkgrey;
+  background-color: rgba(76, 130, 95, 0.8);
 }
 
 p {
@@ -96,12 +96,18 @@ header nav {
   background: #1B1B1B;
   height: 115px;
 }
+header nav ul {
+  display: flex;
+}
 header nav ul li a {
+  padding-left: 15px;
+  padding-right: 15px;
   line-height: 115px;
   text-decoration: none;
+  transition: all 0.25s ease;
 }
-header nav ul li:not(:last-child) a {
-  margin-right: 30px;
+header nav ul li a:hover {
+  background: rgba(150, 255, 187, 0.3843137255);
 }
 
 /* --- Адаптивный интерфейс --- */
@@ -130,7 +136,7 @@ section ul li a {
   color: #282828;
   margin: 10px;
 }
-section ul li:hover, section ul a:hover {
+section ul li:hover, section ul li a:hover {
   color: #FFFFFF;
   background-color: #1B1B1B;
 }
