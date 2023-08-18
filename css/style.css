@@ -107,7 +107,7 @@ header nav ul li a {
   transition: all 0.25s ease;
 }
 header nav ul li a:hover {
-  background: rgba(150, 255, 187, 0.3843137255);
+  background: #373737;
 }
 
 /* --- Адаптивный интерфейс --- */
@@ -132,12 +132,17 @@ section ul li {
 }
 section ul li a {
   font-family: "NotoSans-Regular";
+  height: 43px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 32px;
   color: #282828;
-  margin: 10px;
+  transition: all 0.25s ease;
 }
-section ul li:hover, section ul li a:hover {
+section ul li a:hover {
   color: #FFFFFF;
+}
+section ul li:hover {
   background-color: #1B1B1B;
 }
 

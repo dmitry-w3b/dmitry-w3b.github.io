@@ -11,14 +11,15 @@ section{
             transition: all 0.25s ease; //длительность анимации
             a{
                 font-family: "NotoSans-Regular";
+                height: 43px;
+                margin-left: 10px;
+                margin-right: 10px;
                 font-size: 32px;
                 color: #282828;
-                margin: 10px;}
-
-        //добавление анимаций на кнопки
-        &:hover, a:hover{
-            color: #FFFFFF;
-            background-color: #1B1B1B;}
+                transition: all 0.25s ease; //длительность анимации
+                &:hover{color: #FFFFFF;} //анимация
+            } 
+        &:hover{background-color: #1B1B1B;} //анимация
         }
     }
 }
